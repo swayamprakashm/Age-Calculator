@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Calculator</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Heading -->
+    <h1 class="title">Age Calculator</h1>
+    <p class="subtitle">Find your exact age in years, months, and days</p>
+
+    <!-- Input Section -->
+    <div class="input-wrapper">
+      <label for="date-input" class="label">Select your Date of Birth</label>
+      <input type="date" id="date-input" />
+      <button id="calc-age-btn">Calculate Age</button>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-wrapper">
+      <div class="output-card">
+        <span id="years">-</span>
+        <p>Years</p>
+      </div>
+      <div class="output-card">
+        <span id="months">-</span>
+        <p>Months</p>
+      </div>
+      <div class="output-card">
+        <span id="days">-</span>
+        <p>Days</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">Built with HTML, CSS & JavaScript</p>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

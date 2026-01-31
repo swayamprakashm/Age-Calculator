@@ -1,0 +1,155 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ===== Animated Wallpaper Background ===== */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  background: linear-gradient(-45deg, #00d123, #ffffff, #ff9500);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* ===== Glass Card Container ===== */
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 28px;
+  text-align: center;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  color: #000000;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ===== Inputs & Buttons ===== */
+.input-wrapper {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+input,
+input[type="date"],
+button {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+/* Inputs */
+input,
+input[type="date"] {
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+}
+
+input:focus,
+input[type="date"]:focus {
+  border-color: #55d0f0;
+  box-shadow: 0 0 0 3px rgba(85, 208, 240, 0.25);
+  outline: none;
+}
+
+/* Button */
+button {
+  background: linear-gradient(135deg, #dc143c, #ff4b6e);
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(220, 20, 60, 0.4);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ===== Output Cards ===== */
+.output-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 14px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.output-wrapper div {
+  flex: 1 1 45%;
+  padding: 22px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #111;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.output-wrapper div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+span {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #dc143c;
+  display: block;
+  margin-bottom: 6px;
+}
+
+p {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .output-wrapper div {
+    flex: 1 1 100%;
+  }
+
+  .container {
+    padding: 22px;
+  }
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
