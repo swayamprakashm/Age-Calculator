@@ -1,5 +1,4 @@
 
-https://github.com/user-attachments/assets/f25ed28a-f23c-4788-92cf-54fc4053ee1c
 # Age-Calculator
 
 📅 **Age-Calculator** is a responsive web application built with **HTML, CSS and JavaScript** that helps users calculate their exact age — in **years, months, and days** — based on their date of birth. It features a **clean, modern Glassmorphism UI** for a professional and intuitive user experience. :contentReference[oaicite:1]{index=1}
@@ -94,5 +93,6 @@ Contributions are welcome! If you want to add features, improve UI/UX, fix bugs,
 ## Happy Coding! 🎉
 
 [https://github.com/swayamprakashm]((https://github.com/swayamprakashm))
+
 
 
