@@ -6,8 +6,7 @@
 
 ## 🚀 Live Demo
 
-> *(If you have deployed it, add the link here — e.g., GitHub Pages URL)*  
-> https://your-username.github.io/Age-Calculator/
+ https://swayamprakashm.github.io/Age-Calculator/
 
 ---
 
@@ -90,6 +89,4 @@ Contributions are welcome! If you want to add features, improve UI/UX, fix bugs,
 
 ## Happy Coding! 🎉
 
-**[swayamprakashm](swayamprakashm)**.
-
-```
+[https://github.com/swayamprakashm]((https://github.com/swayamprakashm))
